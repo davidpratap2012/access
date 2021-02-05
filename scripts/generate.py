@@ -22,7 +22,7 @@ if __name__ == '__main__':
     # Load best model
     best_model_dir = prepare_models()
     recommended_preprocessors_kwargs = {
-        'LengthRatioPreprocessor': {'target_ratio': 0.7},
+        'LengthRatioPreprocessor': {'target_ratio': 1.00},
         'LevenshteinPreprocessor': {'target_ratio': 0.7},
         'WordRankRatioPreprocessor': {'target_ratio': 0.7},
         'SentencePiecePreprocessor': {'vocab_size': 10000},
